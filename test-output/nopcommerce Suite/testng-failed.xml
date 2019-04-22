@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [nopcommerce Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.nopcommerce.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="2" name="ie test(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.nopcommerce.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- ie test(failed) -->
+  <test thread-count="2" name="firefox test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.nopcommerce.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- firefox test(failed) -->
+  <test thread-count="2" name="chrome test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.nopcommerce.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- chrome test(failed) -->
+</suite> <!-- Failed suite [nopcommerce Suite] -->
