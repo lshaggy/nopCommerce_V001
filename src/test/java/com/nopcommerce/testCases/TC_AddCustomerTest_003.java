@@ -33,6 +33,7 @@ public class TC_AddCustomerTest_003 extends BaseClass
 	logger.info("********Providing customer's details*********");
 	
 	String email=randomstring()+"@gmail.com";
+	
 	addcust.setEmail(email);
 	addcust.setPassword("test123");
 	addcust.setCustomerRoles("Guest");

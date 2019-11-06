@@ -1,0 +1,29 @@
+2. Update Page Object Classes ( Which are already present in the project as empty 
+pageclass file) for your test case on the project and use the priority order
+as id, name and xpath for object identification ( use findby (id/name/xpath=" ") 
+WebElementLocalName; method) 
+
+//*[@id="exampleInputAmount"]
+//button[contains(@type,'submit')]
+
+
+		Alert alerwindow=driver.switchTo().alert();
+		alerwindow.sendKeys("John");  // provide value in to input box
+		alerwindow.accept(); //close alert window using OK button
+
+
+C:\Users\Louis\eclipse-workspace\nopCommerce_V001
+Project name: nopCommerce_V001
+GithUb URL : https://github.com/lshaggy/nopCommerce_V001.git
+
+git remote add origin "https://github.com/lshaggy/nopCommerce_V001.git"
+
+git config --global user.email "iamlouis972@gmail.com"
+git config --global user.name "lshaggy"
+
+
+git commit -m "My First time (commit)uploading all my project files"
+
+git push -u origin master
+
+https://github.com/lshaggy/nopCommerce_V001.git
